@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyName>DesignSurface</AssemblyName>
     <RootNamespace>TestConsole</RootNamespace>
@@ -16,32 +15,26 @@
     <PackageProjectUrl>https://www.codeproject.com/Articles/24385/Have-a-Great-DesignTime-Experience-with-a-Powerful</PackageProjectUrl>
     <SuppressLicenseValidation>true</SuppressLicenseValidation>
     <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
-
     <!-- Do not build this project when doing a .NET product build. -->
     <!-- The files for this project have been removed from the .NET product due to licensing issues. -->
     <ExcludeFromDotNetBuild>true</ExcludeFromDotNetBuild>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="$(SystemRuntimeSerializationFormattersPackageVersion)" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\System.Windows.Forms.Design\src\System.Windows.Forms.Design.csproj" />
     <ProjectReference Include="..\..\..\..\src\System.Windows.Forms.csproj" />
     <ProjectReference Include="..\..\..\..\..\System.Drawing.Common\src\System.Drawing.Common.csproj" />
     <ProjectReference Include="..\DesignSurfaceExt\DesignSurfaceExt.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Properties\Resources.resx" Generator="ResXFileCodeGenerator" LastGenOutput="Resources.Designer.cs" />
     <Compile Update="Properties\Resources.Designer.cs" AutoGen="True" DependentUpon="Resources.resx" DesignTime="True" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="painter.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>

@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyName>System.Windows.Forms.Design</AssemblyName>
     <CLSCompliant>true</CLSCompliant>
@@ -16,7 +15,6 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <UsePublicApiAnalyzers>true</UsePublicApiAnalyzers>
   </PropertyGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Resources\SR.resx">
       <GenerateSource>true</GenerateSource>
@@ -56,24 +54,19 @@
       <Link>colordlg.data</Link>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\System.Windows.Forms.PrivateSourceGenerators\src\System.Windows.Forms.PrivateSourceGenerators.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.CodeDom" Version="$(SystemCodeDomPackageVersion)" />
+    <PackageReference Include="System.CodeDom" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\System.Windows.Forms.Primitives\src\System.Windows.Forms.Primitives.csproj" />
     <ProjectReference Include="..\..\System.Windows.Forms\src\System.Windows.Forms.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="..\..\Common\src\RTLAwareMessageBox.cs" Link="Common\RTLAwareMessageBox.cs" />
   </ItemGroup>
-  
   <!-- Embedded Resources are globbed based on their location. -->
   <ItemGroup>
     <EmbeddedResource Include="Resources\System\ComponentModel\Design\*.ico">
@@ -92,7 +85,6 @@
       <LogicalName>System.Windows.Forms.Design.Behavior.%(FileName)</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
-  
   <ItemGroup>
     <Compile Update="Resources\MaskDesignerDialog.Designer.cs">
       <DesignTime>True</DesignTime>

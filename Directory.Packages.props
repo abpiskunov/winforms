@@ -1,0 +1,48 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="coverlet.msbuild" Version="6.0.0" />
+    <PackageVersion Include="CSharpIsNullAnalyzer" Version="0.1.495" />
+    <PackageVersion Include="DotNetAnalyzers.DocumentationAnalyzers" Version="1.0.0-beta.59" />
+    <PackageVersion Include="FluentAssertions" Version="6.11.0" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.11.0-beta1.24219.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.10.0-3.final" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="4.10.0-3.final" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="4.10.0-3.final" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.NetAnalyzers" Version="8.0.0-preview.23327.3" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.PublicApiAnalyzers" Version="3.11.0-beta1.24219.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.VisualBasic" Version="4.10.0-3.final" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Workspaces.Common" Version="4.10.0-3.final" />
+    <PackageVersion Include="Microsoft.DotNet.GenFacades" Version="10.0.0-beta.24475.5" />
+    <PackageVersion Include="Microsoft.DotNet.RemoteExecutor" Version="10.0.0-beta.24475.5" />
+    <PackageVersion Include="Microsoft.DotNet.XUnitExtensions" Version="10.0.0-beta.24475.5" />
+    <PackageVersion Include="Microsoft.NETCore.Platforms" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="Microsoft.TargetingPack.NETFramework.v4.7.2" Version="1.0.0" />
+    <PackageVersion Include="Microsoft.VisualStudio.Threading" Version="17.0.15-alpha" />
+    <PackageVersion Include="Microsoft.Win32.SystemEvents" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="Microsoft.Windows.CsWin32" Version="0.3.75-beta" />
+    <PackageVersion Include="Microsoft.WindowsDesktop.App.Ref" Version="3.0.0" />
+    <PackageVersion Include="Moq" Version="4.20.70" />
+    <PackageVersion Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageVersion Include="StyleCop.Analyzers" Version="1.2.0-beta.556" />
+    <PackageVersion Include="System.CodeDom" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.Collections.Concurrent" Version="4.3.0" />
+    <PackageVersion Include="System.ComponentModel.TypeConverter.TestData" Version="8.0.0-beta.23107.1" />
+    <PackageVersion Include="System.Configuration.ConfigurationManager" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.Data.SqlClient" Version="5.0.0-alpha.1.19618.1" />
+    <PackageVersion Include="System.Drawing.Common.TestData" Version="8.0.0-beta.23107.1" />
+    <PackageVersion Include="System.Formats.Nrbf" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.IO.Hashing" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.Management" Version="4.5.0-preview1-25914-04" />
+    <PackageVersion Include="System.Resources.Extensions" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.Runtime.CompilerServices.Unsafe" Version="6.0.0" />
+    <PackageVersion Include="System.Runtime.Serialization.Formatters" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.Windows.Extensions" Version="10.0.0-alpha.1.24475.8" />
+    <PackageVersion Include="System.Windows.Extensions.TestData" Version="8.0.0-beta.23107.1" />
+    <PackageVersion Include="System.Windows.Forms.DataVisualization" Version="1.0.0-prerelease.20110.1" />
+    <PackageVersion Include="xunit.stafact" Version="1.2.46-alpha" />
+  </ItemGroup>
+</Project>

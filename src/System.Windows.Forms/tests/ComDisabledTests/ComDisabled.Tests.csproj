@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <SourceTargetFramework>$(TargetFramework)</SourceTargetFramework>
     <TargetFramework>$(TargetFramework)-windows7.0</TargetFramework>
@@ -9,12 +8,10 @@
     <BuiltInComInteropSupport>false</BuiltInComInteropSupport>
     <EnableUnsafeBinaryFormatterSerialization>true</EnableUnsafeBinaryFormatterSerialization>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="FluentAssertions" Version="$(FluentAssertionsVersion)" />
-    <PackageReference Include="System.Runtime.Serialization.Formatters" Version="$(SystemRuntimeSerializationFormattersPackageVersion)" />
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="System.Runtime.Serialization.Formatters" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\..\BuildAssist\BuildAssist.msbuildproj" />
     <ProjectReference Include="..\..\src\System.Windows.Forms.csproj" />
@@ -24,12 +21,10 @@
     <ProjectReference Include="..\IntegrationTests\System.Windows.Forms.IntegrationTests.Common\System.Windows.Forms.IntegrationTests.Common.csproj" />
     <ProjectReference Include="..\TestUtilities\System.Windows.Forms.TestUtilities.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <!-- workaround for https://github.com/dotnet/sdk/issues/3254 -->
     <Reference Include="$(BaseOutputPath)..\System.Drawing.Facade\$(Configuration)\$(SourceTargetFramework)\System.Drawing.dll" />
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="AxInterop.WMPLib">
       <HintPath>$(ArtifactsBinDir)\AxHosts\$(Configuration)\net472\AxInterop.WMPLib.dll</HintPath>
@@ -38,7 +33,6 @@
       <HintPath>$(ArtifactsBinDir)\AxHosts\$(Configuration)\net472\Interop.WMPLib.dll</HintPath>
     </Reference>
   </ItemGroup>
-
   <ItemGroup>
     <Reference Include="AxInterop.SystemMonitor">
       <HintPath>$(ArtifactsBinDir)\AxHosts\$(Configuration)\net472\AxInterop.SystemMonitor.dll</HintPath>
@@ -47,7 +41,6 @@
       <HintPath>$(ArtifactsBinDir)\AxHosts\$(Configuration)\net472\Interop.SystemMonitor.dll</HintPath>
     </Reference>
   </ItemGroup>
-
   <ItemGroup>
     <None Include="..\AxHosts\AxHosts.resx" Link="Resources\AxHosts.resx">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

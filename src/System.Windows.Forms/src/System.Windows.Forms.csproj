@@ -1,11 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <CLSCompliant>true</CLSCompliant>
     <Nullable>enable</Nullable>
-
     <!--
       IL Trim warnings which should be removed in order to make WinForms trimmable
       See https://github.com/dotnet/winforms/issues/4649
@@ -20,34 +18,28 @@
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
     <UsePublicApiAnalyzers>true</UsePublicApiAnalyzers>
   </PropertyGroup>
-
   <ItemGroup>
     <None Remove="Resources\System\Windows\Forms\XPThemes.manifest" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\System.Windows.Forms.PrivateSourceGenerators\src\System.Windows.Forms.PrivateSourceGenerators.csproj" ReferenceOutputAssembly="false" OutputItemType="Analyzer" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\Accessibility\src\Accessibility.ilproj" />
     <ProjectReference Include="..\..\System.Private.Windows.Core\src\System.Private.Windows.Core.csproj" />
     <ProjectReference Include="..\..\System.Windows.Forms.Primitives\src\System.Windows.Forms.Primitives.csproj" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="$(SystemConfigurationConfigurationManagerPackageVersion)" />
-    <PackageReference Include="System.Resources.Extensions" Version="$(SystemResourcesExtensionsPackageVersion)" />
-    <PackageReference Include="System.Windows.Extensions" Version="$(SystemWindowsExtensionsPackageVersion)" />
-    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" Version="$(SystemRuntimeCompilerServicesUnsafePackageVersion)" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" />
+    <PackageReference Include="System.Resources.Extensions" />
+    <PackageReference Include="System.Windows.Extensions" />
+    <PackageReference Include="System.Runtime.CompilerServices.Unsafe" />
   </ItemGroup>
-
   <ItemGroup>
     <Compile Include="..\..\Common\src\IComparerHelpers.cs" Link="Common\IComparerHelpers.cs" />
     <Compile Include="..\..\Common\src\Obsoletions.cs" Link="Common\Obsoletions.cs" />
     <Compile Include="..\..\Common\src\RTLAwareMessageBox.cs" Link="Common\RTLAwareMessageBox.cs" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Update="Resources\SR.resx">
       <GenerateSource>true</GenerateSource>
@@ -63,7 +55,6 @@
       <LogicalName>ILLink.Substitutions.xml</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
-
   <!-- Embedded Resources are globbed based on their location. -->
   <ItemGroup>
     <EmbeddedResource Include="Resources\System\Windows\Forms\**\*.ico;">
@@ -73,13 +64,11 @@
       <LogicalName>System.Windows.Forms.%(FileName).cur</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Resources\System\Windows\Forms\XPThemes.manifest">
       <LogicalName>System.Windows.Forms.XPThemes.manifest</LogicalName>
     </EmbeddedResource>
   </ItemGroup>
-
   <ItemGroup Condition="Exists('comctl32.dll')">
     <None Update="comctl32.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

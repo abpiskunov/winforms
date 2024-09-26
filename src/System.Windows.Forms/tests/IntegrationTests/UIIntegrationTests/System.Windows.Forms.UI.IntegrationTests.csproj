@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>$(TargetFramework)-windows7.0</TargetFramework>
     <DisableTransitiveFrameworkReferences>true</DisableTransitiveFrameworkReferences>
@@ -10,12 +9,10 @@
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
   </PropertyGroup>
-
   <ItemGroup>
-    <PackageReference Include="Microsoft.VisualStudio.Threading" Version="$(MicrosoftVisualStudioThreadingVersion)" />
-    <PackageReference Include="System.IO.Hashing" Version="$(SystemIOHashingPackageVersion)" />
+    <PackageReference Include="Microsoft.VisualStudio.Threading" />
+    <PackageReference Include="System.IO.Hashing" />
   </ItemGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Common\tests\TestUtilities\System.Windows.Forms.Common.TestUtilities.csproj" />
     <ProjectReference Include="..\..\..\..\System.Design\src\System.Design.Facade.csproj" />
@@ -25,7 +22,6 @@
     <ProjectReference Include="..\..\TestUtilities\System.Windows.Forms.TestUtilities.csproj" />
     <ProjectReference Include="..\System.Windows.Forms.IntegrationTests.Common\System.Windows.Forms.IntegrationTests.Common.csproj" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Resources\3dwarro.cur">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -49,5 +45,4 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
-
 </Project>
